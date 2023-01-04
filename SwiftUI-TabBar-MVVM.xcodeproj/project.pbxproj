@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94311609296448D70083914D /* SwiftUI_TabBar_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94311608296448D70083914D /* SwiftUI_TabBar_MVVMApp.swift */; };
+		9431160D296448D90083914D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9431160C296448D90083914D /* Assets.xcassets */; };
+		94311610296448D90083914D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9431160F296448D90083914D /* Preview Assets.xcassets */; };
+		9431161D296449EF0083914D /* NewsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431161C296449EF0083914D /* NewsFeedView.swift */; };
+		9431161F296449FE0083914D /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431161E296449FE0083914D /* FavouriteView.swift */; };
+		9431162129644A130083914D /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431162029644A130083914D /* NewsDetailView.swift */; };
+		9431162329644D5A0083914D /* NewsFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431162229644D5A0083914D /* NewsFeedService.swift */; };
+		9431162529644D690083914D /* NewsFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431162429644D690083914D /* NewsFeedModel.swift */; };
+		9431162729644D840083914D /* NewsFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431162629644D840083914D /* NewsFeedViewModel.swift */; };
+		94311629296450D60083914D /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94311628296450D60083914D /* APIRouter.swift */; };
+		9431162B296450E30083914D /* RestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431162A296450E30083914D /* RestAPIClient.swift */; };
+		9431162E2964514B0083914D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9431162D2964514B0083914D /* Alamofire */; };
+		9431163029654E560083914D /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431162F29654E560083914D /* TabbarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		94311605296448D70083914D /* SwiftUI-TabBar-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-TabBar-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94311608296448D70083914D /* SwiftUI_TabBar_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TabBar_MVVMApp.swift; sourceTree = "<group>"; };
+		9431160C296448D90083914D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9431160F296448D90083914D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9431161C296449EF0083914D /* NewsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedView.swift; sourceTree = "<group>"; };
+		9431161E296449FE0083914D /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
+		9431162029644A130083914D /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
+		9431162229644D5A0083914D /* NewsFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedService.swift; sourceTree = "<group>"; };
+		9431162429644D690083914D /* NewsFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedModel.swift; sourceTree = "<group>"; };
+		9431162629644D840083914D /* NewsFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewModel.swift; sourceTree = "<group>"; };
+		94311628296450D60083914D /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		9431162A296450E30083914D /* RestAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIClient.swift; sourceTree = "<group>"; };
+		9431162F29654E560083914D /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94311602296448D70083914D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9431162E2964514B0083914D /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		943115FC296448D70083914D = {
+			isa = PBXGroup;
+			children = (
+				94311607296448D70083914D /* SwiftUI-TabBar-MVVM */,
+				94311606296448D70083914D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94311606296448D70083914D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94311605296448D70083914D /* SwiftUI-TabBar-MVVM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94311607296448D70083914D /* SwiftUI-TabBar-MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				9431161B296449A50083914D /* ViewModel */,
+				9431161A2964499B0083914D /* Model */,
+				943116192964498B0083914D /* Service */,
+				943116182964497E0083914D /* Network */,
+				943116172964496E0083914D /* View */,
+				94311616296449650083914D /* Main */,
+				9431160C296448D90083914D /* Assets.xcassets */,
+				9431160E296448D90083914D /* Preview Content */,
+			);
+			path = "SwiftUI-TabBar-MVVM";
+			sourceTree = "<group>";
+		};
+		9431160E296448D90083914D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9431160F296448D90083914D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		94311616296449650083914D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				94311608296448D70083914D /* SwiftUI_TabBar_MVVMApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		943116172964496E0083914D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9431161C296449EF0083914D /* NewsFeedView.swift */,
+				9431161E296449FE0083914D /* FavouriteView.swift */,
+				9431162029644A130083914D /* NewsDetailView.swift */,
+				9431162F29654E560083914D /* TabbarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		943116182964497E0083914D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				94311628296450D60083914D /* APIRouter.swift */,
+				9431162A296450E30083914D /* RestAPIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		943116192964498B0083914D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9431162229644D5A0083914D /* NewsFeedService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9431161A2964499B0083914D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9431162429644D690083914D /* NewsFeedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9431161B296449A50083914D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9431162629644D840083914D /* NewsFeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94311604296448D70083914D /* SwiftUI-TabBar-MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94311613296448D90083914D /* Build configuration list for PBXNativeTarget "SwiftUI-TabBar-MVVM" */;
+			buildPhases = (
+				94311601296448D70083914D /* Sources */,
+				94311602296448D70083914D /* Frameworks */,
+				94311603296448D70083914D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftUI-TabBar-MVVM";
+			packageProductDependencies = (
+				9431162D2964514B0083914D /* Alamofire */,
+			);
+			productName = "SwiftUI-TabBar-MVVM";
+			productReference = 94311605296448D70083914D /* SwiftUI-TabBar-MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		943115FD296448D70083914D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					94311604296448D70083914D = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 94311600296448D70083914D /* Build configuration list for PBXProject "SwiftUI-TabBar-MVVM" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 943115FC296448D70083914D;
+			packageReferences = (
+				9431162C2964514B0083914D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 94311606296448D70083914D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94311604296448D70083914D /* SwiftUI-TabBar-MVVM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94311603296448D70083914D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94311610296448D90083914D /* Preview Assets.xcassets in Resources */,
+				9431160D296448D90083914D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94311601296448D70083914D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9431163029654E560083914D /* TabbarView.swift in Sources */,
+				9431161D296449EF0083914D /* NewsFeedView.swift in Sources */,
+				9431162B296450E30083914D /* RestAPIClient.swift in Sources */,
+				94311629296450D60083914D /* APIRouter.swift in Sources */,
+				9431162529644D690083914D /* NewsFeedModel.swift in Sources */,
+				9431161F296449FE0083914D /* FavouriteView.swift in Sources */,
+				94311609296448D70083914D /* SwiftUI_TabBar_MVVMApp.swift in Sources */,
+				9431162329644D5A0083914D /* NewsFeedService.swift in Sources */,
+				9431162129644A130083914D /* NewsDetailView.swift in Sources */,
+				9431162729644D840083914D /* NewsFeedViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		94311611296448D90083914D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94311612296448D90083914D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94311614296448D90083914D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-TabBar-MVVM/Preview Content\"";
+				DEVELOPMENT_TEAM = HEJDYB7G5K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ssk.practice.SwiftUI-TabBar-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94311615296448D90083914D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-TabBar-MVVM/Preview Content\"";
+				DEVELOPMENT_TEAM = HEJDYB7G5K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ssk.practice.SwiftUI-TabBar-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94311600296448D70083914D /* Build configuration list for PBXProject "SwiftUI-TabBar-MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94311611296448D90083914D /* Debug */,
+				94311612296448D90083914D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94311613296448D90083914D /* Build configuration list for PBXNativeTarget "SwiftUI-TabBar-MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94311614296448D90083914D /* Debug */,
+				94311615296448D90083914D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9431162C2964514B0083914D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9431162D2964514B0083914D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9431162C2964514B0083914D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 943115FD296448D70083914D /* Project object */;
+}
