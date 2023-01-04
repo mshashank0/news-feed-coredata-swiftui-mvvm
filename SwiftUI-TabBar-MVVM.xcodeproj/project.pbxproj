@@ -20,7 +20,21 @@
 		9431162B296450E30083914D /* RestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431162A296450E30083914D /* RestAPIClient.swift */; };
 		9431162E2964514B0083914D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9431162D2964514B0083914D /* Alamofire */; };
 		9431163029654E560083914D /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431162F29654E560083914D /* TabbarView.swift */; };
+		948C29592965534500E23E66 /* NewsFeedViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C29582965534500E23E66 /* NewsFeedViewModelTests.swift */; };
+		948C29602965543800E23E66 /* cricketFeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 948C295F2965543800E23E66 /* cricketFeed.json */; };
+		948C29632965549900E23E66 /* MockNewsFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C29622965549900E23E66 /* MockNewsFeedService.swift */; };
+		948C296429655A7500E23E66 /* cricketFeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 948C295F2965543800E23E66 /* cricketFeed.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		948C295A2965534500E23E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 943115FD296448D70083914D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94311604296448D70083914D;
+			remoteInfo = "SwiftUI-TabBar-MVVM";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		94311605296448D70083914D /* SwiftUI-TabBar-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-TabBar-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +50,10 @@
 		94311628296450D60083914D /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		9431162A296450E30083914D /* RestAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIClient.swift; sourceTree = "<group>"; };
 		9431162F29654E560083914D /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		948C29562965534500E23E66 /* SwiftUI-TabBar-MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-TabBar-MVVMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		948C29582965534500E23E66 /* NewsFeedViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewModelTests.swift; sourceTree = "<group>"; };
+		948C295F2965543800E23E66 /* cricketFeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cricketFeed.json; sourceTree = "<group>"; };
+		948C29622965549900E23E66 /* MockNewsFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsFeedService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		948C29532965534500E23E66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				94311607296448D70083914D /* SwiftUI-TabBar-MVVM */,
+				948C29572965534500E23E66 /* SwiftUI-TabBar-MVVMTests */,
 				94311606296448D70083914D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				94311605296448D70083914D /* SwiftUI-TabBar-MVVM.app */,
+				948C29562965534500E23E66 /* SwiftUI-TabBar-MVVMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +168,24 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		948C29572965534500E23E66 /* SwiftUI-TabBar-MVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				948C29612965544900E23E66 /* Mock */,
+				948C295F2965543800E23E66 /* cricketFeed.json */,
+				948C29582965534500E23E66 /* NewsFeedViewModelTests.swift */,
+			);
+			path = "SwiftUI-TabBar-MVVMTests";
+			sourceTree = "<group>";
+		};
+		948C29612965544900E23E66 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				948C29622965549900E23E66 /* MockNewsFeedService.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +209,24 @@
 			productReference = 94311605296448D70083914D /* SwiftUI-TabBar-MVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
+		948C29552965534500E23E66 /* SwiftUI-TabBar-MVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 948C295C2965534500E23E66 /* Build configuration list for PBXNativeTarget "SwiftUI-TabBar-MVVMTests" */;
+			buildPhases = (
+				948C29522965534500E23E66 /* Sources */,
+				948C29532965534500E23E66 /* Frameworks */,
+				948C29542965534500E23E66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				948C295B2965534500E23E66 /* PBXTargetDependency */,
+			);
+			name = "SwiftUI-TabBar-MVVMTests";
+			productName = "SwiftUI-TabBar-MVVMTests";
+			productReference = 948C29562965534500E23E66 /* SwiftUI-TabBar-MVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,6 +239,10 @@
 				TargetAttributes = {
 					94311604296448D70083914D = {
 						CreatedOnToolsVersion = 13.3;
+					};
+					948C29552965534500E23E66 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 94311604296448D70083914D;
 					};
 				};
 			};
@@ -196,6 +263,7 @@
 			projectRoot = "";
 			targets = (
 				94311604296448D70083914D /* SwiftUI-TabBar-MVVM */,
+				948C29552965534500E23E66 /* SwiftUI-TabBar-MVVMTests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +275,15 @@
 			files = (
 				94311610296448D90083914D /* Preview Assets.xcassets in Resources */,
 				9431160D296448D90083914D /* Assets.xcassets in Resources */,
+				948C296429655A7500E23E66 /* cricketFeed.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948C29542965534500E23E66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948C29602965543800E23E66 /* cricketFeed.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +307,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		948C29522965534500E23E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948C29632965549900E23E66 /* MockNewsFeedService.swift in Sources */,
+				948C29592965534500E23E66 /* NewsFeedViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		948C295B2965534500E23E66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94311604296448D70083914D /* SwiftUI-TabBar-MVVM */;
+			targetProxy = 948C295A2965534500E23E66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		94311611296448D90083914D /* Debug */ = {
@@ -405,6 +499,42 @@
 			};
 			name = Release;
 		};
+		948C295D2965534500E23E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HEJDYB7G5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ssk.practice.SwiftUI-TabBar-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI-TabBar-MVVM.app/SwiftUI-TabBar-MVVM";
+			};
+			name = Debug;
+		};
+		948C295E2965534500E23E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HEJDYB7G5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ssk.practice.SwiftUI-TabBar-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI-TabBar-MVVM.app/SwiftUI-TabBar-MVVM";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -422,6 +552,15 @@
 			buildConfigurations = (
 				94311614296448D90083914D /* Debug */,
 				94311615296448D90083914D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		948C295C2965534500E23E66 /* Build configuration list for PBXNativeTarget "SwiftUI-TabBar-MVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948C295D2965534500E23E66 /* Debug */,
+				948C295E2965534500E23E66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
