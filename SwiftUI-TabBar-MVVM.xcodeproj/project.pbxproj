@@ -26,6 +26,7 @@
 		948C296429655A7500E23E66 /* cricketFeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 948C295F2965543800E23E66 /* cricketFeed.json */; };
 		948C296829655E2600E23E66 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 948C296529655E2200E23E66 /* Model.xcdatamodeld */; };
 		948C296B29655F5E00E23E66 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C296A29655F5E00E23E66 /* PersistenceController.swift */; };
+		948C296D2968213E00E23E66 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C296C2968213D00E23E66 /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		948C29622965549900E23E66 /* MockNewsFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsFeedService.swift; sourceTree = "<group>"; };
 		948C296629655E2200E23E66 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		948C296A29655F5E00E23E66 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		948C296C2968213D00E23E66 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				94311628296450D60083914D /* APIRouter.swift */,
 				9431162A296450E30083914D /* RestAPIClient.swift */,
+				948C296C2968213D00E23E66 /* NetworkMonitor.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				9431161F296449FE0083914D /* FavouriteView.swift in Sources */,
 				94311609296448D70083914D /* SwiftUI_TabBar_MVVMApp.swift in Sources */,
 				9431162329644D5A0083914D /* NewsFeedService.swift in Sources */,
+				948C296D2968213E00E23E66 /* NetworkMonitor.swift in Sources */,
 				9431162129644A130083914D /* NewsDetailView.swift in Sources */,
 				948C296829655E2600E23E66 /* Model.xcdatamodeld in Sources */,
 				9431162729644D840083914D /* NewsFeedViewModel.swift in Sources */,
