@@ -41,7 +41,9 @@ struct NewsFeedView: View {
                 }
             }
             .onAppear(){
-                viewModel.getNewsFeed()
+                if monitor.isConnected {
+                    viewModel.getNewsFeed()
+                }
             }
             .navigationTitle("News Feed")
         }
