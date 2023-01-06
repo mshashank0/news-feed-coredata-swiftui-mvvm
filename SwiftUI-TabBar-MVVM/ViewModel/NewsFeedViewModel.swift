@@ -17,6 +17,7 @@ class NewsFeedViewModel: ObservableObject {
     }
     
     func getNewsFeed() {
+        debugPrint(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
         newsFeedService.getNewsFeed(query: "hockey") { result in
             switch result {
             case .success(let feed):

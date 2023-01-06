@@ -6,11 +6,29 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct FavouriteView: View {
+    
+    @Environment(\.managedObjectContext) private var viewContext
+    
+    @FetchRequest(entity: NewsFeed.entity(), sortDescriptors: [])
+    
+    private var feeds: FetchedResults<NewsFeed>
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                List{
+                    ForEach(feeds) { feed in
+                        Text(feed.title ?? "NA")
+                    }
+                }
+            }
+        }
+        
     }
+    
 }
 
 struct FavouriteView_Previews: PreviewProvider {

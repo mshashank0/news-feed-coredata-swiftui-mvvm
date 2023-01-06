@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SwiftUI_TabBar_MVVMApp: App {
+    
+    let persistenceController = PersistenceController.shared
+    
     var body: some Scene {
         WindowGroup {
             TabbarView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

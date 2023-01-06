@@ -24,6 +24,8 @@
 		948C29602965543800E23E66 /* cricketFeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 948C295F2965543800E23E66 /* cricketFeed.json */; };
 		948C29632965549900E23E66 /* MockNewsFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C29622965549900E23E66 /* MockNewsFeedService.swift */; };
 		948C296429655A7500E23E66 /* cricketFeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 948C295F2965543800E23E66 /* cricketFeed.json */; };
+		948C296829655E2600E23E66 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 948C296529655E2200E23E66 /* Model.xcdatamodeld */; };
+		948C296B29655F5E00E23E66 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C296A29655F5E00E23E66 /* PersistenceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		948C29582965534500E23E66 /* NewsFeedViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewModelTests.swift; sourceTree = "<group>"; };
 		948C295F2965543800E23E66 /* cricketFeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cricketFeed.json; sourceTree = "<group>"; };
 		948C29622965549900E23E66 /* MockNewsFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsFeedService.swift; sourceTree = "<group>"; };
+		948C296629655E2200E23E66 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		948C296A29655F5E00E23E66 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 		94311607296448D70083914D /* SwiftUI-TabBar-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				948C296929655F4600E23E66 /* Database */,
 				9431161B296449A50083914D /* ViewModel */,
 				9431161A2964499B0083914D /* Model */,
 				943116192964498B0083914D /* Service */,
@@ -184,6 +189,15 @@
 				948C29622965549900E23E66 /* MockNewsFeedService.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		948C296929655F4600E23E66 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				948C296529655E2200E23E66 /* Model.xcdatamodeld */,
+				948C296A29655F5E00E23E66 /* PersistenceController.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,12 +311,14 @@
 				9431163029654E560083914D /* TabbarView.swift in Sources */,
 				9431161D296449EF0083914D /* NewsFeedView.swift in Sources */,
 				9431162B296450E30083914D /* RestAPIClient.swift in Sources */,
+				948C296B29655F5E00E23E66 /* PersistenceController.swift in Sources */,
 				94311629296450D60083914D /* APIRouter.swift in Sources */,
 				9431162529644D690083914D /* NewsFeedModel.swift in Sources */,
 				9431161F296449FE0083914D /* FavouriteView.swift in Sources */,
 				94311609296448D70083914D /* SwiftUI_TabBar_MVVMApp.swift in Sources */,
 				9431162329644D5A0083914D /* NewsFeedService.swift in Sources */,
 				9431162129644A130083914D /* NewsDetailView.swift in Sources */,
+				948C296829655E2600E23E66 /* Model.xcdatamodeld in Sources */,
 				9431162729644D840083914D /* NewsFeedViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +601,19 @@
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		948C296529655E2200E23E66 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				948C296629655E2200E23E66 /* Model.xcdatamodel */,
+			);
+			currentVersion = 948C296629655E2200E23E66 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 943115FD296448D70083914D /* Project object */;
 }

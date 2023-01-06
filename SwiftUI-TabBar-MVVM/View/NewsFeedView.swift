@@ -11,8 +11,12 @@ struct NewsFeedView: View {
     
     @ObservedObject private var viewModel = NewsFeedViewModel()
     
-    @State var isFavourite : Bool = false
+    @Environment(\.managedObjectContext) private var viewContext
     
+    @FetchRequest(entity: NewsFeed.entity(), sortDescriptors: [])
+    
+    private var favFeeds: FetchedResults<NewsFeed>
+        
     var body: some View {
         NavigationView {
             VStack {
@@ -22,10 +26,8 @@ struct NewsFeedView: View {
                             Text(feed.title)
                             Spacer()
                             Button {
-                                isFavourite.toggle()
+                                addFavorite(feed)
                             } label: {
-                                isFavourite ?
-                                Image(systemName: "star.fill") :
                                 Image(systemName: "star")
                             }
                         }
@@ -38,6 +40,31 @@ struct NewsFeedView: View {
             .navigationTitle("News Feed")
         }
     }
+    
+    private func addFavorite(_ feedHit: Hit) {
+           
+           withAnimation {
+               let feed = NewsFeed(context: viewContext)
+               print(feedHit.objectID)
+               feed.objectId = feedHit.objectID
+               feed.id = UUID()
+               feed.title = feedHit.title
+               feed.url = feedHit.url
+               feed.isFavourite = true
+               
+               saveContext()
+           }
+       }
+       
+       private func saveContext() {
+           do {
+               try viewContext.save()
+           } catch {
+               let error = error as NSError
+               fatalError("An error occured: \(error)")
+           }
+       }
+
 }
 
 struct NewsView_Previews: PreviewProvider {
